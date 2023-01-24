@@ -27,14 +27,17 @@ WHERE EXISTS (SELECT *
             WHERE drink = b1.name AND price >= 4.99)
 ```
 Example: want to find name and manufacturer of each drink that Fred likes
-- b1 refers to outer relation, thus this is a **correlation query** 
+- b1 refers to outer relation, thus this is a **correlation query**
+- Typically want to avoid these unless it is absolutely necessary 
 
 ## The ANY Operator
-- x = ANY (realtion) means that x equals at least one tuple in the relation 
-- x is greater than or equal  to at least one tuple in the relation
+- x = ANY (relation) means that x equals at least one tuple in the relation 
+- x is greater than or equal to at least one tuple in the relation
+- i.e. "does it match at least one"
 
 ## The ALL Operator 
 - x = ALL (relation) means that for every tuple t in the relation, x != t 
+- i.e. "does it match ALL of them"
 
 ```sql
 SELECT drink
