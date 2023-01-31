@@ -78,7 +78,7 @@ BEGIN
     -- NOT FOUND is an event that is flagged when we are done reading records -- 
     DECLARE CONTINUE HANDLER FOR NOT FOUND SET exit_loop = TRUE; 
                                 
-    DROP TABLE NewTable IF EXISTS;
+    DROP TABLE IF EXISTS NewTable;
     
     CREATE TABLE NewTable (
         CustomerID  INT Primary Key,
