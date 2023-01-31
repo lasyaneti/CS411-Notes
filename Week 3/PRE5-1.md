@@ -36,9 +36,3 @@ UPDATE Customer
 SET phone = '555-1212-'
 WHERE name = 'Fred';
 ```
-
-##
-
-##
-
-##
