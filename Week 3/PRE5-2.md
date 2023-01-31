@@ -34,27 +34,6 @@ GetAvgScore()
 Cursors are used to iterate through a set of rows returned by a query so that we can process each individual row.
 
 ```sql
-DELIMITER //
-CREATE PROCEDURE GetTotalStds(IN dept VARCHAR(30), out TOTAL INT)
-BEGIN
-    DECLARE totalStds INT DEFAULT 0
-    SELECT COUNT (*)
-    INTO total
-    FROM Students 
-    WHERE Department=dept;
-
-    SELECT totalStds;
-END //
-DELIMETER ;
-
--- calling procedure 
-CALL GetTotalStds("CS", @total);
--- getting result from procedure call
-SELECT @total;
-```
-
-## In-Class exercise (SQL2.10)
-```sql
 CREATE PROCEDURE Result()
 BEGIN
     -- define local variables -- 
@@ -105,15 +84,15 @@ BEGIN
     
     INSERT INTO NewTable VALUE (varCustomerId, varFirstName, varLastName, varCustomerStatus);
     
-    END LOOP cloop
+    END LOOP cloop;
     
     -- important to free memory space -- 
-    CLOSE custCur 
+    CLOSE custCur; 
     
     -- finally obtain what question wants -- 
-    SELECT CustomerId, FirstName, LastName, CustomerStatus 
+    SELECT FirstName, LastName, CustomerStatus 
     FROM NewTable
-    ORDER BY CustomerId DESC 
+    ORDER BY CustomerId DESC; 
     
 END;
 ```
