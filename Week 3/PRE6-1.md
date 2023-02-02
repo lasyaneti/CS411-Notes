@@ -71,3 +71,21 @@ CREATE ASSERTION FewCafe CHECK (
     (SELECT COUNT (*) FROM Customers)
 ) 
 ```
+
+## In-class Exercise 
+Write one SQL Trigger to check whether the same customer has purchased a product from Apple before, and if so, it gives the customer 15% discount on the purchase price. 
+```sql
+CREATE TRIGGER appleDisc BEFORE INSERT ON Purchases FOR EACH ROW 
+BEGIN 
+    SET @appleCnt = (SELECT COUNT(PurchaseId)
+                    FROM Purchases NATUARL JOIN Products 
+                    WHERE BrandName="Apple" AND CustomerID = NEW.CustomerID);
+    IF @appleCnt > 0 THEN 
+        SET NEW.Price = NEW.Price * 0.85;
+    END IF; 
+END;
+
+INSERT INTO Purchases VALUES (500, 20, 4, 500);
+
+SELECT * FROM Purchases ORDER BY PurchaseId;
+```
