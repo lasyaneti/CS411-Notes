@@ -1,0 +1,8 @@
+{
+  "strictLineBreaks": true,
+  "showLineNumber": true,
+  "vimMode": true,
+  "trashOption": "local",
+  "alwaysUpdateLinks": false,
+  "attachmentFolderPath": "assets"
+}
