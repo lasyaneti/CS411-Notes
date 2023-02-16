@@ -77,5 +77,4 @@ Computer the attribute closure for the **LEFT & NONE** together are see where it
 
 ## Computing Attribute Closure for ALL FDs
 1. Computer $X+$ for every attribute X 
-2. Enumerate all FDs $X \rightarrow Y$ such that $Y \subset X+$ and $X \union Y = \emptyset$
-3. 
+2. Enumerate all FDs $X \rightarrow Y$ such that $Y \subseteq X+$ and $X \cap Y = \emptyset$
