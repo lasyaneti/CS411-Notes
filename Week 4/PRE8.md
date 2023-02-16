@@ -52,13 +52,13 @@ Trivial dependency $A_1, A_2, .. A_n \rightarrow A_1$ because set of attributes 
     2. $A D \rightarrow E$
     3. $B \rightarrow D$
     4. $A F \rightarrow B$
-- **CLOSURE OF** {{$A, B$}}$^+$ is {{$A, B, C, D, E$}} because
+- **CLOSURE OF** $\{A, B\}^+$ is $\{A, B, C, D, E\}$ because
     - A gives us A (trivial dependency)
     - B gives us B (trivial dependency)
     - FD (1) gives us C
     - FD (3) gives us D
     - given D, applying FD (2) gives us E
-- **CLOSURE OF** {{$A, F$}}$^+$ is {{$A, F, B, C, D, E$}} because
+- **CLOSURE OF** $\{A, F\}^+$ is $\{A, F, B, C, D, E\}$ because
     - A gives us A
     - F gives us F
     - FD (4) gives us B 
