@@ -34,4 +34,8 @@
 - Every key is automatically a superkey, but not every superkey is a key
 
 ## Splitting/Combining Rule 
-$A_1, A_2 ... A_n \arrow B_1, B_2 ... B_n$
+$A_1, A_2 ... A_n \rightarrow B_1, B_2 ... B_n$ is equivalent to 
+- $A_1, A_2 ... A_n \rightarrow B_1$;
+- $A_1, A_2 ... A_n \rightarrow B_2$;
+- ... 
+- $A_1, A_2 ... A_n \rightarrow B_n$;
