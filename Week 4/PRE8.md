@@ -34,6 +34,4 @@
 - Every key is automatically a superkey, but not every superkey is a key
 
 ## Splitting/Combining Rule 
-```latex
-$A_1, A_2 ... A_n \arrow B_1, B_2 ... B_n$ 
-```
+$A_1, A_2 ... A_n \arrow B_1, B_2 ... B_n$
