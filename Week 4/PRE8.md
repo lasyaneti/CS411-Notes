@@ -10,8 +10,8 @@
 - DB Schemas that follow certain rules made by DB researchers = **normalization** is coverting scheme to fit these rules 
 
 ## Functional Dependencies 
-- If two tuples agree on attributes (A_1, A2_, ... A_N)
-- Then they MUST also agree on attributes (B_1, B2_, ... B_N)
+- If two tuples agree on attributes ($A_1, A_2, ... A_N$)
+- Then they MUST also agree on attributes ($B_1, B_2, ... B_N$)
 - We should see the same value, **same idea as key-value pairs**
 - EX: ssn to employee name 
 - NOT AN EX: bday to ssn
@@ -39,6 +39,7 @@ Funtional dependency of the form $A_1, A_2 ... A_n \rightarrow B_1, B_2 ... B_m$
 - $A_1, A_2 ... A_n \rightarrow B_2$;
 - ... 
 - $A_1, A_2 ... A_n \rightarrow B_m$;
+
 The reverse is true for combining, all RHS can be combined into one if same LHS
 
 ## Inference Rules for FDs
@@ -71,6 +72,7 @@ Trivial dependency $A_1, A_2, .. A_n \rightarrow A_1$ because set of attributes 
 - MIDDLE = attributes in some LHS and some RHS of FDs
 - RIGHT = attributes only in RHS of FDs
 - NONE = attributes appear in none of the FDs
+
 Computer the attribute closure for the **LEFT & NONE** together are see where it takes us, in the example above it was $AF$
 
 ## Computing Attribute Closure for ALL FDs
