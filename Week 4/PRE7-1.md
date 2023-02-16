@@ -21,7 +21,7 @@ R = {(1, a), (1, c), (3, b)}
 - Relationships can also be tables that connect attributes of seperate tables 
 
 ### Multiciplicity 
-![](/assets/Screenshot 2023-02-16 at 1.48.49 PM.png)
+![/assets/Screenshot 2023-02-16 at 1.48.49 PM.png]()
  
 ## UML IS CLEANER THAN ER!! 
 
@@ -36,7 +36,7 @@ R = {(1, a), (1, c), (3, b)}
     - Semicircle in ER is equivalant **FILLED DIAMOND** in UML Diagrams 
 
 ## Weak Entity Sets 
-![](/assets/Screenshot 2023-02-16 at 2.01.26 PM.png)
+![/assets/Screenshot 2023-02-16 at 2.01.26 PM.png]()
 - "CS 411 Database Systems" is a class at UIUC, but it might also be a class at UW, and MIT, and any other college... 
 - This is a weak entity set because we HAVE to go to the universty to really find out what class we are looking at
 - There is no way to tell what unique course it is by only looking at the course entity
