@@ -17,4 +17,4 @@
 - Index file: has an index 
     - Index block with search key and pointer to block of data file where key exists
 
-![](/assets/pre11.png)
+![](/assets/pre11.jpg)
