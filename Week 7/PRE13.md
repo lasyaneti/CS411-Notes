@@ -23,10 +23,12 @@
 - No overflows! 
 
 ### Insertion
-- if `i > j`, split data block and rearrange
+if `i > j`, split data block and rearrange
+
 ![](/assets/pre13-2.jpeg)
 
-- if `j == i`, increase array size by x2 
+if `j == i`, increase array size by x2 
+
 ![](/assets/pre13-1.jpeg)
 
 ### Performance 
