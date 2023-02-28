@@ -44,7 +44,7 @@ if `j == i`, increase array size by x2
 - If m >= n, flip most significant bit 
 - Allows overflow blocks  
 
-![](/assets/pre13-3.jpeg)
+![](/assets/pre13-3.png)
 
 ### Insertion 
 1. Computer average record per bucket (`r/N`)
@@ -52,4 +52,4 @@ if `j == i`, increase array size by x2
 3. If above threshold, add a new bucket 
     - don't have to go over all blocks to rearrange, only go to newly added buckets, flip most significant bit (within right most range `i`) and rearrange any overflow at that index 
 
-![](/assets/pre13-4.jpeg)
+![](/assets/pre13-4.png)
