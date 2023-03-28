@@ -6,7 +6,7 @@ RA is set-based so we need to use distinct in all the SQL queries to make it equ
 
 ![](/assets/16.3.jpg)
 
-![](/assets/16.4.jpg)
+![](/assets/16.4.jpeg)
 
 # Building Complex RA Expressions
 1. Sequence of assignments
