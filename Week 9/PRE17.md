@@ -74,4 +74,17 @@ Binary operations (union, intersect, difference, etc.) need sort. What we sort o
 Total cost: 3B(R) + 3B(S) assuming B(R) + B(S) <= M(M-1)
 
 
-umm lol 
+### Sorting based
+
+### Two Pass Algorithms Based on Hashing
+- partition S and R into (M-1) equal sized buckets 
+- once block is full, we send it to partition 
+- whichever fits into memory, read in all blocks, perform join
+
+### Index-based
+Nested loop join
+- clustered B(R) + T(R)B(S)/V(S,a)
+- unclustered B(R) + T(R)T(S)/V(S,a)
+
+Sort-merge or Zig-zag join 
+- B(R) + B(S)
